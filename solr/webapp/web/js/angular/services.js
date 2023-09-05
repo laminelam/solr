@@ -328,7 +328,7 @@ solrAdminServices.factory('System',
       }
 
       function sha256(str) {
-        const shaObj = new jsSHA("SHA-256", "TEXT", { encoding: "UTF8" });
+        var shaObj = new jsSHA("SHA-256", "TEXT", { encoding: "UTF8" });
         return shaObj.update(str).getHash("HEX");
       }
 
